@@ -11,7 +11,9 @@ class HomePage extends StatelessWidget {
         title: Text("Components"),
       ),
 
-      body: _lista(),
+      body: 
+      
+      _lista(),
     );
   }
 
@@ -49,6 +51,8 @@ class HomePage extends StatelessWidget {
 
   List<Widget> _listaItems(List<dynamic> data,BuildContext context) {
     final List<Widget> options=[];
+   
+
     data.forEach((opt){
       final widgetTemp=ListTile(
         title: Text(opt["texto"]), ///mostrara lo que hay en nuestro json
